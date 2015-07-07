@@ -1,0 +1,6 @@
+#!/bin/sh
+(
+if [ -n "$_REMOTE_ADDR" ]; then echo "X-PHP-Originating-IP: ${_REMOTE_ADDR}"; fi
+if [ -n "$_QUERY_STRING" ]; then echo "X-PHP-Originating-Query: ${_QUERY_STRING}"; fi
+cat
+)| /usr/sbin/sendmail -t -i
