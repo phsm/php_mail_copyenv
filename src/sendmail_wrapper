@@ -1,0 +1,3 @@
+#!/bin/sh
+logger -p mail.info vhostmail: site=${HTTP_HOST}, client=${REMOTE_ADDR}, script=${SCRIPT_NAME}
+/usr/sbin/sendmail -t -i $*
