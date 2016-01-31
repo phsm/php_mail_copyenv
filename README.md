@@ -9,7 +9,7 @@ It adds following headers:
 
 ## Installation
 1. Put sendmail_wrapper and set_php_headers.php files to some directory, e.g. /usr/local/bin.
-2. Change the following directives in your php.ini file:
+2. Change the following directives in your php.ini file (like in example php.ini):
 ```
 sendmail_path = /usr/local/bin/sendmail_wrapper
 auto_prepend_file = /usr/local/bin/set_php_headers.php
